@@ -2,6 +2,10 @@ import { Engine, Scene, Vector3, HavokPlugin } from "@babylonjs/core";
 import HavokPhysics from "@babylonjs/havok";
 import { createWorld } from "bitecs";
 
+/**
+ * GameEngine is the core wrapper around Babylon.js Engine and Scene.
+ * It initializes the WebGL context and Havok physics plugin.
+ */
 export class GameEngine {
     public engine: Engine;
     public scene: Scene;
